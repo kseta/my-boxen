@@ -1,12 +1,37 @@
 GITHUBTARBALL
+  remote: boxen/puppet-alfred
+  specs:
+    alfred (1.0.3)
+
+GITHUBTARBALL
   remote: boxen/puppet-boxen
   specs:
     boxen (2.1.0)
 
 GITHUBTARBALL
+  remote: boxen/puppet-chrome
+  specs:
+    chrome (1.1.0)
+
+GITHUBTARBALL
+  remote: boxen/puppet-clipmenu
+  specs:
+    clipmenu (1.0.0)
+
+GITHUBTARBALL
+  remote: boxen/puppet-ctags
+  specs:
+    ctags (1.0.0)
+
+GITHUBTARBALL
   remote: boxen/puppet-dnsmasq
   specs:
     dnsmasq (1.0.0)
+
+GITHUBTARBALL
+  remote: boxen/puppet-dropbox
+  specs:
+    dropbox (1.1.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-gcc
@@ -19,6 +44,11 @@ GITHUBTARBALL
     git (1.2.2)
 
 GITHUBTARBALL
+  remote: boxen/puppet-googledrive
+  specs:
+    googledrive (1.0.2)
+
+GITHUBTARBALL
   remote: boxen/puppet-homebrew
   specs:
     homebrew (1.1.2)
@@ -27,6 +57,21 @@ GITHUBTARBALL
   remote: boxen/puppet-hub
   specs:
     hub (1.0.0)
+
+GITHUBTARBALL
+  remote: boxen/puppet-iterm2
+  specs:
+    iterm2 (1.0.2)
+
+GITHUBTARBALL
+  remote: boxen/puppet-java
+  specs:
+    java (1.1.0)
+
+GITHUBTARBALL
+  remote: boxen/puppet-libtool
+  specs:
+    libtool (1.0.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-nginx
@@ -39,6 +84,21 @@ GITHUBTARBALL
     nodejs (2.2.0)
 
 GITHUBTARBALL
+  remote: boxen/puppet-nvm
+  specs:
+    nvm (1.0.0)
+
+GITHUBTARBALL
+  remote: boxen/puppet-osx
+  specs:
+    osx (1.1.0)
+
+GITHUBTARBALL
+  remote: boxen/puppet-phpstorm
+  specs:
+    phpstorm (1.0.3)
+
+GITHUBTARBALL
   remote: boxen/puppet-repository
   specs:
     repository (2.0.2)
@@ -49,9 +109,34 @@ GITHUBTARBALL
     ruby (4.1.0)
 
 GITHUBTARBALL
+  remote: boxen/puppet-skype
+  specs:
+    skype (1.0.2)
+
+GITHUBTARBALL
   remote: boxen/puppet-sudo
   specs:
     sudo (1.0.0)
+
+GITHUBTARBALL
+  remote: boxen/puppet-tmux
+  specs:
+    tmux (1.0.2)
+
+GITHUBTARBALL
+  remote: boxen/puppet-vim
+  specs:
+    vim (1.0.3)
+
+GITHUBTARBALL
+  remote: boxen/puppet-wget
+  specs:
+    wget (1.0.0)
+
+GITHUBTARBALL
+  remote: boxen/puppet-zsh
+  specs:
+    zsh (1.0.0)
 
 GITHUBTARBALL
   remote: cprice-puppet/puppetlabs-inifile
@@ -64,17 +149,34 @@ GITHUBTARBALL
     stdlib (4.0.2)
 
 DEPENDENCIES
+  alfred (= 1.0.3)
   boxen (= 2.1.0)
+  chrome (= 1.1.0)
+  clipmenu (= 1.0.0)
+  ctags (= 1.0.0)
   dnsmasq (= 1.0.0)
+  dropbox (= 1.1.0)
   gcc (= 1.0.0)
   git (= 1.2.2)
+  googledrive (= 1.0.2)
   homebrew (= 1.1.2)
   hub (= 1.0.0)
   inifile (= 0.9.0)
+  iterm2 (= 1.0.2)
+  java (= 1.1.0)
+  libtool (= 1.0.0)
   nginx (= 1.4.0)
   nodejs (= 2.2.0)
+  nvm (= 1.0.0)
+  osx (= 1.1.0)
+  phpstorm (= 1.0.3)
   repository (= 2.0.2)
   ruby (= 4.1.0)
+  skype (= 1.0.2)
   stdlib (= 4.0.2)
   sudo (= 1.0.0)
+  tmux (= 1.0.2)
+  vim (= 1.0.3)
+  wget (= 1.0.0)
+  zsh (= 1.0.0)
 
