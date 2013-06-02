@@ -39,12 +39,12 @@ class people::kseta {
   }
   exec { "sh ${dotfiles}/configure":
     cwd => $dotfiles,
-    creates => [ "${home}/.zshrc", "${home}/.vimrc", "${home}/.gitconfig", "${home}/.tmux.conf" ],
+    creates => [ "${home}/.zshrc", "${home}/.zshenv", "${home}/.vimrc", "${home}/.vim", "${home}/.gitconfig" ],
     require => Repository[$dotfiles],
   }
 
   # seettings for vim
-  $vim         = "${home}/.vim"
+  $vim         = "${dotfiles}/.vim"
   $neobundle   = "${vim}/bundle/neobundle.vim"
   file { $vim:
     ensure => "directory",
