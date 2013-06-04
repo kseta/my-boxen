@@ -6,6 +6,7 @@ class people::kseta {
   include java
   include googledrive
   include alfred
+  include phpstorm
 
 
   # install with homebrew
