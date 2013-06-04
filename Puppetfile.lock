@@ -139,6 +139,11 @@ GITHUBTARBALL
     vim (1.0.3)
 
 GITHUBTARBALL
+  remote: boxen/puppet-virtualbox
+  specs:
+    virtualbox (1.0.2)
+
+GITHUBTARBALL
   remote: boxen/puppet-wget
   specs:
     wget (1.0.0)
@@ -190,6 +195,7 @@ DEPENDENCIES
   sudo (= 1.0.0)
   tmux (= 1.0.2)
   vim (= 1.0.3)
+  virtualbox (= 1.0.2)
   wget (= 1.0.0)
   zsh (= 1.0.0)
 

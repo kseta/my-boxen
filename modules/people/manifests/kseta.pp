@@ -10,6 +10,7 @@ class people::kseta {
   include shortcat
   include clipmenu
   include skitch
+  include virtualbox
 
 
   # install with homebrew
