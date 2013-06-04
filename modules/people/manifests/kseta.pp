@@ -43,6 +43,18 @@ class people::kseta {
     require => Repository[$dotfiles],
   }
 
+  # settings for private files
+  $privatefiles  = "${src}/privatefiles"
+  repository { $privatefiles:
+    source  => "git@bitbucket.org:${::luser}/privatefiles.git",
+    require => File[$src]
+  }
+  exec { "sh ${privatefiles}/configure":
+    cwd => $privatefiles,
+    creates => [ "${home}/.ssh" ],
+    require => Repository[$privatefiles],
+  }
+
   # seettings for vim
   $vim         = "${dotfiles}/.vim"
   $neobundle   = "${vim}/bundle/neobundle.vim"
