@@ -9,6 +9,7 @@ class people::kseta {
   include phpstorm
   include shortcat
   include clipmenu
+  include skitch
 
 
   # install with homebrew
