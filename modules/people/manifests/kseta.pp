@@ -8,6 +8,7 @@ class people::kseta {
   include alfred
   include phpstorm
   include shortcat
+  include clipmenu
 
 
   # install with homebrew

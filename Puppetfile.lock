@@ -158,6 +158,7 @@ DEPENDENCIES
   boxen (= 2.1.0)
   chrome (= 1.1.0)
   clipmenu (= 1.0.0)
+  clipmenu (= 1.0.0)
   ctags (= 1.0.0)
   dnsmasq (= 1.0.0)
   dropbox (= 1.1.0)
