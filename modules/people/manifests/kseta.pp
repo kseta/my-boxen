@@ -23,6 +23,7 @@ class people::kseta {
       'wget',
       'z',
       'zsh',
+      'curl',
     ]:
   }
 
