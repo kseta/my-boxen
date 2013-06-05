@@ -81,4 +81,14 @@ class people::kseta {
   osx_chsh { $::luser:
     shell   => "${boxen::config::homebrewdir}/bin/zsh";
   }
+
+ # download items
+ file { "${src}/items":
+   ensure => "directory",
+ }
+ $jdbc_url = "http://jdbc.postgresql.org/download/postgresql-9.2-1002.jdbc3.jar"
+ exec { "wget ${jdbc_url} -P ${src}/items":
+   cwd => $privatefiles,
+   creates => [ "${src}/items" ],
+ }
 }
