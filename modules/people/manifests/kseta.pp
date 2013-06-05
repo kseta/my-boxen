@@ -34,8 +34,19 @@ class people::kseta {
       provider => pkgdmg;
   }
 
-  $home      = "/Users/${::luser}"
-  $src       = "${home}/src"
+  $home  = "/Users/${::luser}"
+  $src   = "${home}/src"
+  $boxen = "/opt/boxen"
+
+  # settings for phpbrew
+  $phpbrew = "${boxen}/phpbrew"
+  repository { $phpbrew:
+    source  => "c9s/phpbrew",
+    require => File[$boxen]
+  }
+  exec { "ln -s ${phpbrew}/phpbrew ${boxen}/bin":
+    require => Repository[$phpbrew],
+  }
 
   # settings for dotfiles
   $dotfiles  = "${src}/dotfiles"
