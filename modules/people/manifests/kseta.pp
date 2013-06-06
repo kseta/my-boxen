@@ -11,6 +11,7 @@ class people::kseta {
   include clipmenu
   include skitch
   include virtualbox
+  include mongodb
 
 
   # install with homebrew
