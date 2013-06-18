@@ -12,6 +12,7 @@ class people::kseta {
   include skitch
   include virtualbox
   include mongodb
+  include apache
 
 
   # install with homebrew
@@ -25,6 +26,20 @@ class people::kseta {
       'z',
       'zsh',
       'curl',
+      'automake',
+      'autoconf',
+      'pcre',
+      're2c',
+      'mhash',
+      'libtool',
+      'icu4c',
+      'gettext',
+      'jpeg',
+      'libxml2',
+      'mcrypt',
+      'gmp',
+      'libevent',
+      'openssl',
     ]:
   }
 
