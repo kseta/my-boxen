@@ -110,12 +110,26 @@ class people::kseta {
   }
 
  # download items
- file { "${src}/items":
+ $items = "${src}/items"
+
+ # postgresql jdbc
+ file { "${items}":
    ensure => "directory",
  }
  $jdbc_url = "http://jdbc.postgresql.org/download/postgresql-9.2-1002.jdbc3.jar"
- exec { "wget ${jdbc_url} -P ${src}/items":
+ exec { "wget ${jdbc_url} -P ${items}":
    cwd => $privatefiles,
-   creates => [ "${src}/items" ],
+   creates => [ "${items}" ],
+ }
+
+ # hub completion
+ $_git = "${boxen}/homebrew/share/zsh/site-functions/_git"
+ $hubc = "${items}/hub-zsh-completion/_git"
+ repository { "${items}/hub-zsh-completion":
+     source  => "glidenote/hub-zsh-completion",
+     require => File[$items]
+ }
+ exec { "rm ${_git} && ln -s ${hubc} ${_git}":
+     require => File[$items]
  }
 }
