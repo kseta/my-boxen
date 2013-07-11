@@ -34,6 +34,7 @@ class people::kseta {
       'gettext',
       'jpeg',
       'libxml2',
+      'libssh2',
       'mcrypt',
       'gmp',
       'libevent',
