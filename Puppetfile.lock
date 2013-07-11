@@ -79,11 +79,6 @@ GITHUBTARBALL
     mongodb (1.0.3)
 
 GITHUBTARBALL
-  remote: boxen/puppet-nginx
-  specs:
-    nginx (1.4.0)
-
-GITHUBTARBALL
   remote: boxen/puppet-nodejs
   specs:
     nodejs (2.2.0)
@@ -187,7 +182,6 @@ DEPENDENCIES
   java (= 1.1.0)
   libtool (= 1.0.0)
   mongodb (= 1.0.3)
-  nginx (= 1.4.0)
   nodejs (= 2.2.0)
   nvm (= 1.0.0)
   osx (= 1.1.0)

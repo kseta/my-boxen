@@ -12,8 +12,6 @@ class people::kseta {
   include skitch
   include virtualbox
   include mongodb
-  include apache
-
 
   # install with homebrew
   package {
