@@ -39,6 +39,7 @@ class people::kseta {
       'gmp',
       'libevent',
       'openssl',
+      'fontforge',
     ]:
   }
 
@@ -111,6 +112,17 @@ class people::kseta {
 
  # download items
  $items = "${src}/items"
+
+ # Ricty
+ $ricty = "${items}/ricty"
+ repository { $ricty:
+     source  => "git@bitbucket.org:${::luser}/ricty.git",
+     require => File[$items]
+ }
+ exec { "sh ${ricty}/configure":
+     cwd     => $ricty,
+     require => Repository[$ricty],
+ }
 
  # postgresql jdbc
  file { "${items}":
