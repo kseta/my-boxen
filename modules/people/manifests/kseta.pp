@@ -40,6 +40,9 @@ class people::kseta {
       'libevent',
       'openssl',
       'fontforge',
+      'rbenv-gemset',
+      'fontconfig',
+      'freetype'
     ]:
   }
 
