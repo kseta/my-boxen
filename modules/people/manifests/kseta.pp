@@ -37,12 +37,7 @@ class people::kseta {
       'libssh2',
       'mcrypt',
       'gmp',
-      'libevent',
-      'openssl',
-      'fontforge',
-      'rbenv-gemset',
-      'fontconfig',
-      'freetype'
+      'libevent'
     ]:
   }
 
